@@ -1,5 +1,5 @@
 import AnimatedUser from "../assets/images/animateduser.png";
-import BgVideo from "/videos/15439679-uhd_2560_1440_30fps.mp4"
+import BgVideo from "/15439679-uhd_2560_1440_30fps.mp4"
 import { motion } from "framer-motion";
 
 const Hero = () => {
