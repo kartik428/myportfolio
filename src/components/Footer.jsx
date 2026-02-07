@@ -103,7 +103,7 @@ const Footer = () => {
                   required
                 />
                 <button className=" bg-purple-600 hover:bg-purple-700 transition text-white px-5  md:px-3 py-2 md:py-1 rounded-full">
-                  Email
+                  Send
                 </button>
                   </div>
               </form>
