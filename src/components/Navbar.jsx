@@ -24,15 +24,45 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`navbar w-full flex justify-around items-center p-4 bg-black/30 backdrop-blur-md  text-white border border-white/20 shadow-lg fixed top-0 z-50`}
+        className={`navbar w-full flex justify-between md:justify-around items-center p-4 bg-black/30 backdrop-blur-md  text-white border border-white/20 shadow-lg fixed top-0 z-50`}
       >
-        <h1 className="text-3xl text-[#7827aa] font-bold ">Portfolio</h1>
+        <h1 className="text-3xl text-cyan-400 font-bold ">
+          {" "}
+          <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            PORTFOLIO
+          </span>
+        </h1>
         <ul className="  hidden nav-elem text-lg gap-8  sm:flex text-white cursor-pointer">
-          <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full" onClick={() => handleScroll2("home")}>Home</li>
-          <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"  onClick={() => handleScroll2("about")}>About</li>
-          <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full" onClick={() => handleScroll2("skills")}>Skills</li>
-          <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full" onClick={() => handleScroll2("projects")}>Projects</li>
-          <li className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full" onClick={() => handleScroll2("contact")}>Contact</li>
+          <li
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+            onClick={() => handleScroll2("home")}
+          >
+            Home
+          </li>
+          <li
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+            onClick={() => handleScroll2("about")}
+          >
+            About
+          </li>
+          <li
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+            onClick={() => handleScroll2("skills")}
+          >
+            Skills
+          </li>
+          <li
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+            onClick={() => handleScroll2("projects")}
+          >
+            Projects
+          </li>
+          <li
+            className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+            onClick={() => handleScroll2("contact")}
+          >
+            Contact
+          </li>
         </ul>
 
         {/* Mobile Menu */}
@@ -66,12 +96,12 @@ const Navbar = () => {
         <div className="flex gap-3 pr-3">
           <a
             href="../../public/Kartik_Singh_resume_latest.pdf"
-            className="nav-btn bg-amber-300 rounded-md p-2 hover:bg-red-300 hover:text-white focus:outline-none"
+            className="nav-btn bg-cyan-400 rounded-full px-3 py-1 font-bold text-black hover:bg-cyan-100 focus:outline-none transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.5)]"
             download
           >
             Resume
           </a>
-       
+
           {/* Hamburger Button (Mobile) */}
           <button
             onClick={() => setOpen(!open)}

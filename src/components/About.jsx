@@ -15,7 +15,7 @@ const About = () => {
             <img
               src={Animatedimg}
               alt="About me"
-              className="rounded-2xl shadow-lg w-75 md:w-100"
+              className="rounded-2xl border-b-4 border-cyan-500 shadow-lg w-75 md:w-100"
             />
           </div>
         </motion.div>
@@ -27,8 +27,16 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl flex justify-center md:justify-start items-center ms:items-start font-bold mb-6">
-              About <span className="text-amber-500">Me</span>
+              About  <span className="text-cyan-500"> Me</span>
             </h2>
+             {/* Underline */}
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "5rem" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="w-20 h-1 bg-cyan-500 mt-3 mb-8 rounded-full mx-auto md:mx-0"
+          />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -70 }}
@@ -55,9 +63,10 @@ const About = () => {
           >
             <div className="flex gap-4 justify-center md:justify-start items-center sm:items-start">
               <a href="#contact">
-                <button className="border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-black px-6 py-3 rounded-lg font-semibold transition">
+                <button className="border border-cyan-500 text-cyan-500 hover:bg-cyan-400 hover:text-black px-6 py-3 rounded-lg font-semibold transition">
                   Contact Me
                 </button>
+                
               </a>
             </div>
           </motion.div>

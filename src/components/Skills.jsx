@@ -9,11 +9,11 @@ import {
 import { SiTailwindcss, SiMongodb, SiExpress } from "react-icons/si";
 
 const skills = [
+  { name: "React.js", icon: <FaReact size={40} className="text-cyan-400" /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss size={40} className="text-sky-400" /> },
+  { name: "JavaScript", icon: <FaJs size={40} className="text-yellow-400" /> },
   { name: "HTML5", icon: <FaHtml5 size={40} className="text-orange-500" /> },
   { name: "CSS3", icon: <FaCss3Alt size={40} className="text-blue-500" /> },
-  { name: "JavaScript", icon: <FaJs size={40} className="text-yellow-400" /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss size={40} className="text-sky-400" /> },
-  { name: "React.js", icon: <FaReact size={40} className="text-cyan-400" /> },
   { name: "Node.js", icon: <FaNodeJs size={40} className="text-green-500" /> },
   { name: "MongoDB", icon: <SiMongodb size={40} className="text-green-400" /> },
   { name: "Express.js", icon: <SiExpress size={40} className="text-gray-300" /> },
@@ -49,7 +49,15 @@ const Skills = () => {
           viewport={{ once: true }}
           className="text-4xl font-bold text-center mb-12"
         >
-          My <span className="text-amber-500">Skills</span>
+          My <span className="text-cyan-500">Skills</span>
+                   {/* Underline */}
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "5rem" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="w-20 h-1 bg-cyan-500 mt-5 mb-8 rounded-full mx-auto"
+          />
         </motion.h2>
 
         {/* Skills Grid */}
@@ -66,10 +74,10 @@ const Skills = () => {
               variants={item}
               whileHover={{
                 scale: 1.08,
-                boxShadow: "0px 0px 20px rgba(245,158,11,0.4)",
+                boxShadow: "0px 0px 20px rgb(0, 255, 255, 0.4)",
               }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="flex flex-col items-center justify-center gap-3 p-6 rounded-xl border border-gray-700 hover:border-amber-500 cursor-pointer"
+              className="flex flex-col items-center justify-center gap-3 p-6 rounded-xl border border-cyan-700 hover:border-cyan-500 cursor-pointer"
             >
               {skill.icon}
               <span className="text-lg font-semibold">{skill.name}</span>

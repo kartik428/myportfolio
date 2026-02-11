@@ -44,7 +44,15 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-4xl font-bold text-center mt-10 mb-12"
         >
-          Contact <span className="text-amber-500">Me</span>
+          Contact <span className="text-cyan-500">Me</span>
+               {/* Underline */}
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "5rem" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="w-20 h-1 bg-cyan-500 mt-5 mb-8 rounded-full mx-auto"
+          />
         </motion.h2>
 
         {/* Form */}
@@ -57,20 +65,22 @@ const Contact = () => {
           viewport={{ once: true }}
           className="bg-black p-8 rounded-2xl shadow-lg space-y-6"
         >
-          <input type="hidden" name="title" value="Portfolio Contact" />
+          <input type="hidden" name="title" value="Portfolio Contact" required />
 
           <div className="grid md:grid-cols-2 gap-6">
             <input
               name="name"
               type="text"
               placeholder="Your Name"
-              className="bg-transparent border border-gray-700 focus:border-amber-500 outline-none px-4 py-3 rounded-lg transition"
+              required
+              className="bg-transparent border border-gray-700 focus:border-cyan-500 outline-none px-4 py-3 rounded-lg transition"
             />
             <input
               name="email"
               type="email"
               placeholder="Your Email"
-              className="bg-transparent border border-gray-700 focus:border-amber-500 outline-none px-4 py-3 rounded-lg transition"
+              required
+              className="bg-transparent border border-gray-700 focus:border-cyan-500 outline-none px-4 py-3 rounded-lg transition"
             />
           </div>
 
@@ -78,7 +88,7 @@ const Contact = () => {
             name="message"
             rows="5"
             placeholder="Your Message"
-            className="w-full bg-transparent border border-gray-700 focus:border-amber-500 outline-none px-4 py-3 rounded-lg transition"
+            className="w-full bg-transparent border border-gray-700 focus:border-cyan-500 outline-none px-4 py-3 rounded-lg transition"
           ></textarea>
 
           <motion.button
@@ -89,7 +99,7 @@ const Contact = () => {
             }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "none" }}
-            className="w-full bg-amber-500 text-black py-3 rounded-lg font-semibold"
+            className="w-full bg-cyan-500 text-black py-3 rounded-lg font-semibold"
            
           >
             {loading ? "Sending..." : "Send Message"}

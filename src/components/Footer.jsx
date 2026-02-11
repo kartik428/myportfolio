@@ -2,6 +2,7 @@ import React from "react";
 import User_img from "../assets/Kartikdp1.jpeg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   // to connect with whatsapp--
@@ -9,33 +10,44 @@ const Footer = () => {
   //           const message =
   //           "Hi, I want to connect with you!";
   const handleSubmit = async (e) => {
-  e.preventDefault(); // stop reload
+    e.preventDefault(); // stop reload
 
-  const formData = new FormData(e.target);
+    const formData = new FormData(e.target);
 
-  await fetch("https://docs.google.com/forms/d/e/1FAIpQLSeg0UXhMdBwwpkvCpp2Yj_jysV0zQzCvsym3DKbgpf8AcD4Yg/formResponse", {
-    method: "POST",
-    mode: "no-cors",
-    body: formData,
-  });
+    await fetch(
+      "https://docs.google.com/forms/d/e/1FAIpQLSeg0UXhMdBwwpkvCpp2Yj_jysV0zQzCvsym3DKbgpf8AcD4Yg/formResponse",
+      {
+        method: "POST",
+        mode: "no-cors",
+        body: formData,
+      },
+    );
 
-  alert("Email saved!");
-  e.target.reset();
-};
-
+    alert("Email saved!");
+    e.target.reset();
+  };
 
   return (
     <footer className="bg-black overflow-x-hidden text-gray-300 pt-12 pb-6 px-6 md:px-20">
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
         {/* Brand */}
         <div>
+          
           <img
             src={User_img}
             alt="Userimage"
-            className="w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 mb-2 rounded-tr-[30px]  md:rounded-tr-[60px] rounded-bl-[30px] md:rounded-bl-[60px] object-cover"
+            className="w-20 h-20 md:w-32 md:h-32 lg:w-35 lg:h-35 mb-2 rounded-tr-[30px]  md:rounded-tr-[60px] rounded-bl-[30px] md:rounded-bl-[60px] object-cover"
           />
           <h2 className="text-2xl font-bold text-white">Kartik Singh</h2>
-          <p className="mt-3 text-sm text-gray-400">
+               {/* Underline */}
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "5.2rem", height: "2px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="w-20 h-1 bg-cyan-500 mt-3 mb-8 rounded-full"
+          />
+          <p className="mt-3 text-sm max-w-60 text-gray-400">
             Frontend Developer crafting modern, fast and user-friendly web
             experiences.
           </p>
@@ -44,6 +56,14 @@ const Footer = () => {
         {/* Links */}
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
+          {/* Underline */}
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "3rem", height: "2px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="w-20 h-1 bg-cyan-500 mt-3 mb-8 rounded-full"
+          />
           <ul className="space-y-2">
             <li>
               <a href="#home" className="hover:text-white transition">
@@ -51,15 +71,21 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#projects" className="hover:text-white transition">
-                Projects
-              </a>
-            </li>
-            <li>
               <a href="#about" className="hover:text-white transition">
                 About
               </a>
             </li>
+            <li>
+              <a href="#skills" className="hover:text-white transition">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="hover:text-white transition">
+                Projects
+              </a>
+            </li>
+
             <li>
               <a href="#contact" className="hover:text-white transition">
                 Contact
@@ -70,7 +96,15 @@ const Footer = () => {
 
         {/* Social */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-3">Connect</h3>
+          <h3 className="text-lg font-semibold text-white mb-3">Socials</h3>
+          {/* Underline */}
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "3rem", height: "2px" }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="w-20 h-1 bg-cyan-500 mt-3 mb-8 rounded-full"
+          />
           <div className="flex gap-4">
             <a
               href="https://github.com/kartik428"
@@ -92,9 +126,16 @@ const Footer = () => {
             <h2 className="text-white text-xl font-semibold mb-4">
               Connect us
             </h2>
-
-             <form onSubmit={handleSubmit}>
-            <div className=" flex items-center  bg-white/10 backdrop-blur-md rounded-full py-3 pr-4 md:py-2 md:text-[13px] w-90 md:w-60">
+            {/* Underline */}
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "3rem", height: "1px" }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="w-20 h-1 bg-cyan-500 mt-3 mb-8 rounded-full"
+            />
+            <form onSubmit={handleSubmit}>
+              <div className=" flex items-center  bg-white/10 backdrop-blur-md rounded-full py-3 pr-4 md:py-2 md:text-[13px] w-90 md:w-60">
                 <input
                   type="email"
                   name="entry.1711828456"
@@ -105,11 +146,11 @@ const Footer = () => {
                 <button className=" bg-purple-600 hover:bg-purple-700 transition text-white px-5  md:px-3 py-2 md:py-1 rounded-full">
                   Send
                 </button>
-                  </div>
-              </form>
+              </div>
+            </form>
 
-              {/* connect with whatsapp */}
-              {/* <a
+            {/* connect with whatsapp */}
+            {/* <a
                 href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
                   message
                 )}`}
@@ -118,7 +159,6 @@ const Footer = () => {
               >
                 <button>Connect on WhatsApp</button>
               </a> */}
-          
           </div>
         </div>
       </div>
