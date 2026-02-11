@@ -142,7 +142,7 @@ export default function ProjectSection() {
       description: "Welcome to My Portfolio website.",
       image: MyPortfolio,
       tags: ["React", "CSS3", "HTML5", "EmailJS", "Googleform"],
-      link: "https://portfolio-xuv.vercel.app/",
+      link: "https://portfolio-1-nu-five.vercel.app/",
     },
     {
       id: 5,
