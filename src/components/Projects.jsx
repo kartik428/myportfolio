@@ -3,6 +3,7 @@ import MusicPlayer from "../assets/images/Musicplayer.png";
 import FoodApp from "../assets/images/FoodApp.png";
 import Blog from "../assets/images/Blog.png";
 import MyPortfolio from "../assets/images/MyPortfolio.png";
+import ClientGourvi from "../assets/images/ClientGourvi.png";
 import { useState } from "react";
 // import { FaArrowDownLong } from "react-icons/fa6";
 
@@ -35,6 +36,8 @@ const ProjectCard = ({
             transition={{ duration: 0.4 }}
             src={image}
             alt={title}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -109,25 +112,24 @@ export default function ProjectSection() {
   const [showAll, setShowAll] = useState(false);
 
   const projects = [
-    {
-      id: 1,
-      title: "Blog Website(MERN Stack)",
-      description:
-        "A full-featured blogging platform with user authentication, post creation, and commenting functionality.",
-      image: Blog,
-      tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
-      link: "#",
-    },
-    {
+    // {
+    //   id: 1,
+    //   title: "Blog Website(MERN Stack)",
+    //   description:
+    //     "A full-featured blogging platform with user authentication, post creation, and commenting functionality.",
+    //   image: Blog,
+    //   tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+    //   link: "#",
+    // },
+     {
       id: 2,
-      title: "Music Player App(Pure JS)",
-      description:
-        "A sleek music player application with playlist management, audio visualization, and offline support.",
-      image: MusicPlayer,
-      tags: ["HTML5", "CSS", "JavaScript"],
-      link: "https://musicplayer-wbm.vercel.app/",
+      title: "Portfolio website",
+      description: "Welcome to My Portfolio website.",
+      image: MyPortfolio,
+      tags: ["React", "CSS3", "HTML5", "EmailJS", "Googleform"],
+      link: "https://myportfolio-one-peach-98.vercel.app/",
     },
-    {
+      {
       id: 3,
       title: "Food Recipe App(API Integration)",
       description:
@@ -136,68 +138,71 @@ export default function ProjectSection() {
       tags: ["React", "API", "CSS", "HTML5"],
       link: "https://food-recipe-app-three-theta.vercel.app/",
     },
+   
     {
       id: 4,
-      title: "Portfolio website",
-      description: "Welcome to My Portfolio website.",
-      image: MyPortfolio,
-      tags: ["React", "CSS3", "HTML5", "EmailJS", "Googleform"],
-      link: "https://myportfolio-one-peach-98.vercel.app/",
+      title: "Music Player App(Pure JS)",
+      description:
+        "A sleek music player application with playlist management, audio visualization, and offline support.",
+      image: MusicPlayer,
+      tags: ["HTML5", "CSS", "JavaScript"],
+      link: "https://musicplayer-wbm.vercel.app/",
     },
+  
     {
       id: 5,
-      title: "Client Website (EmailJS, ReactJS, Googleform)",
+      title: "Client Website- Linkedupp",
       description:
-        "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
-      image: FoodApp,
-      tags: ["React", "API", "CSS3", "HTML5"],
-      link: "https://food-recipe-app-three-theta.vercel.app/",
+        "Developed a modern and responsive portfolio website for a client, focused on clean UI design and smooth user experience.",
+      image: ClientGourvi,
+      tags: ["React","TailwindCSS", "EmailJS", "Googleform"],
+      link: "https://www.linkedupp.in/",
     },
-    {
-      id: 6,
-      title: "Inventory Management System (IMS)",
-      description:
-        "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
-      image: Blog,
-      tags: ["React", "API", "CSS3", "HTML5"],
-      link: "https://food-recipe-app-three-theta.vercel.app/",
-    },
-    {
-      id: 7,
-      title: "Inventory Management System (IMS)",
-      description:
-        "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
-      image: Blog,
-      tags: ["React", "API", "CSS3", "HTML5"],
-      link: "https://food-recipe-app-three-theta.vercel.app/",
-    },
-    {
-      id: 8,
-      title: "Inventory Management System (IMS)",
-      description:
-        "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
-      image: Blog,
-      tags: ["React", "API", "CSS3", "HTML5"],
-      link: "https://food-recipe-app-three-theta.vercel.app/",
-    },
-    {
-      id: 9,
-      title: "Inventory Management System (IMS)",
-      description:
-        "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
-      image: Blog,
-      tags: ["React", "API", "CSS3", "HTML5"],
-      link: "https://food-recipe-app-three-theta.vercel.app/",
-    },
-    {
-      id: 10,
-      title: "Inventory Management System (IMS)",
-      description:
-        "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
-      image: Blog,
-      tags: ["React", "API", "CSS3", "HTML5"],
-      link: "https://food-recipe-app-three-theta.vercel.app/",
-    },
+    // {
+    //   id: 6,
+    //   title: "Inventory Management System (IMS)",
+    //   description:
+    //     "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
+    //   image: Blog,
+    //   tags: ["React", "API", "CSS3", "HTML5"],
+    //   link: "https://food-recipe-app-three-theta.vercel.app/",
+    // },
+    // {
+    //   id: 7,
+    //   title: "Inventory Management System (IMS)",
+    //   description:
+    //     "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
+    //   image: Blog,
+    //   tags: ["React", "API", "CSS3", "HTML5"],
+    //   link: "https://food-recipe-app-three-theta.vercel.app/",
+    // },
+    // {
+    //   id: 8,
+    //   title: "Inventory Management System (IMS)",
+    //   description:
+    //     "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
+    //   image: Blog,
+    //   tags: ["React", "API", "CSS3", "HTML5"],
+    //   link: "https://food-recipe-app-three-theta.vercel.app/",
+    // },
+    // {
+    //   id: 9,
+    //   title: "Inventory Management System (IMS)",
+    //   description:
+    //     "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
+    //   image: Blog,
+    //   tags: ["React", "API", "CSS3", "HTML5"],
+    //   link: "https://food-recipe-app-three-theta.vercel.app/",
+    // },
+    // {
+    //   id: 10,
+    //   title: "Inventory Management System (IMS)",
+    //   description:
+    //     "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
+    //   image: Blog,
+    //   tags: ["React", "API", "CSS3", "HTML5"],
+    //   link: "https://food-recipe-app-three-theta.vercel.app/",
+    // },
   ];
 
   const visibleProjects = showAll ? projects : projects.slice(0, 6);

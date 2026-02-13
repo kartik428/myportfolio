@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section id="about" className=" overflow-x-hidden bg-black text-white py-20 px-6">
+    <section
+      id="about"
+      className=" overflow-x-hidden bg-black text-white py-20 px-6"
+    >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 py-20 gap-12 items-center ">
         {/* Left Side - Image */}
         <motion.div
@@ -14,6 +17,8 @@ const About = () => {
           <div className="flex justify-center">
             <img
               src={Animatedimg}
+              loading="lazy"
+              decoding="async"
               alt="About me"
               className="rounded-2xl border-b-4 border-cyan-500 shadow-lg w-75 md:w-100"
             />
@@ -27,16 +32,16 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl flex justify-center md:justify-start items-center ms:items-start font-bold mb-6">
-              About  <span className="text-cyan-500"> Me</span>
+              About <span className="text-cyan-500"> Me</span>
             </h2>
-             {/* Underline */}
-          <motion.div
-            initial={{ width: 0 }}
-            whileInView={{ width: "5rem" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="w-20 h-1 bg-cyan-500 mt-3 mb-8 rounded-full mx-auto md:mx-0"
-          />
+            {/* Underline */}
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "5rem" }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="w-20 h-1 bg-cyan-500 mt-3 mb-8 rounded-full mx-auto md:mx-0"
+            />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -70 }}
@@ -66,7 +71,6 @@ const About = () => {
                 <button className="border border-cyan-500 text-cyan-500 hover:bg-cyan-400 hover:text-black px-6 py-3 rounded-lg font-semibold transition">
                   Contact Me
                 </button>
-                
               </a>
             </div>
           </motion.div>
