@@ -95,7 +95,7 @@ const Navbar = () => {
 
         <div className="flex gap-3 pr-3">
           <a
-            href="../../public/Kartik_Singh_resume_latest.pdf"
+            href="/Kartik_Singh_resume_latest.pdf"
             className="nav-btn bg-cyan-400 rounded-full px-3 py-1 font-bold text-black hover:bg-cyan-100 focus:outline-none transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.5)]"
             download
           >
