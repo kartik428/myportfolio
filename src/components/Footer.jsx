@@ -32,14 +32,14 @@ const Footer = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
         {/* Brand */}
         <div>
-          
+
           <img
             src={User_img}
             alt="Userimage"
             className="w-20 h-20 md:w-32 md:h-32 lg:w-35 lg:h-35 mb-2 rounded-tr-[30px]  md:rounded-tr-[60px] rounded-bl-[30px] md:rounded-bl-[60px] object-cover"
           />
           <h2 className="text-2xl font-bold text-white">Kartik Singh</h2>
-               {/* Underline */}
+          {/* Underline */}
           <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "5.2rem", height: "2px" }}

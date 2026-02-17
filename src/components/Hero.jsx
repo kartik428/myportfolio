@@ -90,7 +90,7 @@ const Hero = () => {
               </button>
             </a>
 
-            <a  href="/Kartik_Singh_resume_latest.pdf" download>
+            <a  href="/Kartik Singh_Frontend_Developer_Resume1.pdf" download>
               <button className="px-8 py-3 border border-slate-500 text-slate-100 rounded-full hover:bg-white/10 backdrop-blur-sm transition-all duration-300">
                 Resume
               </button>

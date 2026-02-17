@@ -14,11 +14,11 @@ const ProjectCard = ({
   tags = ["React", "Tailwind", "Framer"],
   link = "#",
 }) => {
-    const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <>
       <motion.div
-       
+
         target="_blank"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -54,11 +54,10 @@ const ProjectCard = ({
             {title}
           </motion.h3>
 
-          <p 
-          layout
-          className={`text-zinc-400 text-sm mb-4 transition-all duration-300 ${
-            isExpanded ? "line-clamp-none" : "line-clamp-2"
-          }`}>
+          <p
+            layout
+            className={`text-zinc-400 text-sm mb-4 transition-all duration-300 ${isExpanded ? "line-clamp-none" : "line-clamp-2"
+              }`}>
             {description}
           </p>
 
@@ -83,7 +82,7 @@ const ProjectCard = ({
             className="mt-auto inline-flex items-center text-cyan-400 font-semibold text-sm group/link cursor-pointer"
             href={link}
             target="_blank"
-        >
+          >
             View Project
             <motion.span
               className="ml-1"
@@ -121,15 +120,15 @@ export default function ProjectSection() {
     //   tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
     //   link: "#",
     // },
-     {
+    {
       id: 2,
       title: "Portfolio website",
       description: "Welcome to My Portfolio website.",
       image: MyPortfolio,
-      tags: ["React", "CSS3", "HTML5", "EmailJS", "Googleform"],
+      tags: ["React", "TailwindCSS", "EmailJS", "Googleform"],
       link: "https://myportfolio-one-peach-98.vercel.app/",
     },
-      {
+    {
       id: 3,
       title: "Food Recipe App(API Integration)",
       description:
@@ -138,7 +137,7 @@ export default function ProjectSection() {
       tags: ["React", "API", "CSS", "HTML5"],
       link: "https://food-recipe-app-three-theta.vercel.app/",
     },
-   
+
     {
       id: 4,
       title: "Music Player App(Pure JS)",
@@ -148,14 +147,14 @@ export default function ProjectSection() {
       tags: ["HTML5", "CSS", "JavaScript"],
       link: "https://musicplayer-wbm.vercel.app/",
     },
-  
+
     {
       id: 5,
       title: "Client Website- Linkedupp",
       description:
         "Developed a modern and responsive portfolio website for a client, focused on clean UI design and smooth user experience.",
       image: ClientGourvi,
-      tags: ["React","TailwindCSS", "EmailJS", "Googleform"],
+      tags: ["React", "TailwindCSS", "EmailJS", "Googleform"],
       link: "https://www.linkedupp.in/",
     },
     // {
@@ -239,7 +238,7 @@ export default function ProjectSection() {
                 className="px-6 py-2  text-blue-500 font-semibold rounded-lg hover:text-white transition"
                 onClick={() => setShowAll(!showAll)}
               >
-                {showAll ? "-View Less-" : "-View More-"} 
+                {showAll ? "-View Less-" : "-View More-"}
               </button>
             </div>
           )}
