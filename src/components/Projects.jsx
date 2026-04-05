@@ -54,12 +54,12 @@ const ProjectCard = ({
             {title}
           </motion.h3>
 
-          <p
+          <motion.p
             layout
             className={`text-zinc-400 text-sm mb-4 transition-all duration-300 ${isExpanded ? "line-clamp-none" : "line-clamp-2"
               }`}>
             {description}
-          </p>
+          </motion.p>
 
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-6">

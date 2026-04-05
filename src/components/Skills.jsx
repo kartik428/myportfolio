@@ -6,12 +6,13 @@ import {
   FaReact, 
   FaNodeJs 
 } from "react-icons/fa";
-import { SiTailwindcss, SiMongodb, SiExpress } from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiExpress, SiTypescript } from "react-icons/si";
 
 const skills = [
   { name: "React.js", icon: <FaReact size={40} className="text-cyan-400" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss size={40} className="text-sky-400" /> },
   { name: "JavaScript", icon: <FaJs size={40} className="text-yellow-400" /> },
+  { name: "TypeScript", icon: <SiTypescript size={40} className="text-yellow-400" /> },
   { name: "HTML5", icon: <FaHtml5 size={40} className="text-orange-500" /> },
   { name: "CSS3", icon: <FaCss3Alt size={40} className="text-blue-500" /> },
   { name: "Node.js", icon: <FaNodeJs size={40} className="text-green-500" /> },
