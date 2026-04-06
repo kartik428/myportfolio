@@ -4,6 +4,7 @@ import FoodApp from "../assets/images/FoodApp.png";
 import Blog from "../assets/images/Blog.png";
 import MyPortfolio from "../assets/images/MyPortfolio.png";
 import ClientGourvi from "../assets/images/ClientGourvi.png";
+import BlogWeb from "../assets/images/Blogweb.png";
 import { useState } from "react";
 // import { FaArrowDownLong } from "react-icons/fa6";
 
@@ -111,22 +112,23 @@ export default function ProjectSection() {
   const [showAll, setShowAll] = useState(false);
 
   const projects = [
-    // {
-    //   id: 1,
-    //   title: "Blog Website(MERN Stack)",
-    //   description:
-    //     "A full-featured blogging platform with user authentication, post creation, and commenting functionality.",
-    //   image: Blog,
-    //   tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
-    //   link: "#",
-    // },
+    {
+      id: 1,
+      title: "Blogging Website(MERN Stack)",
+      description:
+        "A full-featured blogging platform with user authentication, blog creation, CRUD functionality, JWT, bcyrpt for password security.",
+      image: BlogWeb,
+      tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+      link: "https://blog-frontend-theta-two.vercel.app/",
+    },
     {
       id: 2,
-      title: "Portfolio website",
-      description: "Welcome to My Portfolio website.",
-      image: MyPortfolio,
-      tags: ["React", "TailwindCSS", "EmailJS", "Googleform"],
-      link: "https://myportfolio-one-peach-98.vercel.app/",
+      title: "Music Player App(Pure JS)",
+      description:
+        "A sleek music player application with playlist management, audio visualization, and offline support.",
+      image: MusicPlayer,
+      tags: ["HTML5", "CSS", "JavaScript"],
+      link: "https://musicplayer-wbm.vercel.app/",
     },
     {
       id: 3,
@@ -138,16 +140,15 @@ export default function ProjectSection() {
       link: "https://food-recipe-app-three-theta.vercel.app/",
     },
 
+
     {
       id: 4,
-      title: "Music Player App(Pure JS)",
-      description:
-        "A sleek music player application with playlist management, audio visualization, and offline support.",
-      image: MusicPlayer,
-      tags: ["HTML5", "CSS", "JavaScript"],
-      link: "https://musicplayer-wbm.vercel.app/",
+      title: "Portfolio website",
+      description: "Welcome to My Portfolio website.",
+      image: MyPortfolio,
+      tags: ["React", "TailwindCSS", "EmailJS", "Googleform"],
+      link: "https://myportfolio-one-peach-98.vercel.app/",
     },
-
     {
       id: 5,
       title: "Client Website- Linkedupp",
