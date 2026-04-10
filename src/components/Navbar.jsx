@@ -86,6 +86,9 @@ const Navbar = () => {
               <a onClick={() => setOpen(false)} href="#about">
                 About
               </a>
+              <a onClick={() => setOpen(false)} href="#experience">
+                Experience
+              </a>
               <a onClick={() => setOpen(false)} href="#skills">
                 Skills
               </a>
