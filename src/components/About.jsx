@@ -49,7 +49,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
           >
             <p className="text-gray-300 text-center md:text-left leading-relaxed mb-4  ">
-              I’m a passionate Frontend Developer who loves building beautiful,
+              I’m a passionate Full Stack Developer who loves building beautiful,
               responsive, and user-friendly web experiences. I focus on writing
               clean code and creating interfaces that feel smooth and intuitive.
             </p>
