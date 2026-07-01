@@ -4,19 +4,19 @@ const timelineData = [
   {
     title: "Frontend Developer Intern",
     subtitle: "Beritrave Technologies",
-    date: "Feb 2026 – Present",
+    date: "Mar 2026 – May 2026",
     location: "Indore, MP · Remote",
-    skills: ["React.js", "HTML5", "CSS3", "JavaScript", "Tailwind", "Typescript"],
+    skills: ["React.js", "HTML5", "CSS3", "JavaScript", "Tailwind", "Typescript", "Node.js", "Express.js", "MongoDB"],
     desc: "Working on real-world web applications and learning modern development practices.",
   },
 ];
 
 const hireCard = {
   title: "Open to Full-Time Roles",
-  subtitle: "Frontend Developer",
+  subtitle: "Full Stack Developer",
   message:
-    "Currently interning at Beritrave Technologies and actively looking for full-time Frontend Developer opportunities. Let's build something great together!",
-  skills: ["React.js", "Tailwind CSS", "JavaScript", "HTML5", "Node.js", "Typescript"],
+    "Interned at Beritrave Technologies and actively looking for full-time Full Stack Developer opportunities. Let's build something great together!",
+  skills: ["React.js", "Tailwind CSS", "JavaScript", "HTML5", "Node.js", "Typescript", "Express.js", "MongoDB"],
 };
 
 function ExperienceCard({ item, direction }) {
@@ -174,7 +174,7 @@ export default function Timeline() {
             viewport={{ once: true }}
             className="bg-cyan-600 text-white text-xs font-semibold px-4 py-1.5 rounded animate-pulse"
           >
-            🚀 Actively Looking
+            Actively Looking
           </motion.span>
         </div>
 
@@ -298,7 +298,7 @@ export default function Timeline() {
           className="flex justify-center my-3 relative z-10"
         >
           <span className="bg-cyan-600 text-white text-xs font-semibold px-5 py-1.5 rounded animate-pulse">
-            🚀 Actively Looking
+             Actively Looking
           </span>
         </motion.div>
 

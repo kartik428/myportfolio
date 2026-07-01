@@ -45,7 +45,7 @@ const Hero = () => {
           <h2 className="text-4xl md:text-7xl font-bold text-cyan-400 mt-4 drop-shadow-lg">
           
             <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Frontend Developer
+              Full Stack Developer
             </span>
           </h2>
         </motion.div>

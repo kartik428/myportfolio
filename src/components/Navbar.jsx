@@ -29,7 +29,7 @@ const Navbar = () => {
         <h1 className="text-3xl text-cyan-400 font-bold ">
           {" "}
           <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            PORTFOLIO
+           KARTIK // DEV
           </span>
         </h1>
         <ul className="  hidden nav-elem text-lg gap-8  sm:flex text-white cursor-pointer">

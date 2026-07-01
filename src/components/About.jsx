@@ -1,4 +1,4 @@
-import Animatedimg from "../assets/images/animateduser.png";
+import Animatedimg from "../assets/images/aboutdp.jpeg";
 import { motion } from "framer-motion";
 
 const About = () => {

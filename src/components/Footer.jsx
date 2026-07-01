@@ -1,8 +1,9 @@
 import React from "react";
-import User_img from "../assets/Kartikdp1.jpeg";
+import User_img from "../assets/images/aboutdp.jpeg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
   // to connect with whatsapp--
@@ -10,7 +11,7 @@ const Footer = () => {
   //           const message =
   //           "Hi, I want to connect with you!";
   const handleSubmit = async (e) => {
-    e.preventDefault(); // stop reload
+    e.preventDefault(); 
 
     const formData = new FormData(e.target);
 
@@ -48,7 +49,7 @@ const Footer = () => {
             className="w-20 h-1 bg-cyan-500 mt-3 mb-8 rounded-full"
           />
           <p className="mt-3 text-sm max-w-60 text-gray-400">
-            Frontend Developer crafting modern, fast and user-friendly web
+            Full Stack Developer crafting modern, fast and user-friendly web
             experiences.
           </p>
         </div>
@@ -73,6 +74,11 @@ const Footer = () => {
             <li>
               <a href="#about" className="hover:text-white transition">
                 About
+              </a>
+            </li>
+            <li>
+              <a href='#experience' className="hover:text-white transition">
+                Experience
               </a>
             </li>
             <li>
@@ -119,6 +125,9 @@ const Footer = () => {
               className="hover:text-white transition"
             >
               <FaLinkedinIn />
+            </a>
+            <a href="https://leetcode.com/u/kartik428/" target="_blank" className="hover:text-white transition" aria-label="LeetCode">
+              <SiLeetcode />
             </a>
           </div>
           {/* email connect  */}

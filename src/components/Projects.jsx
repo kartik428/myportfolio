@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import MusicPlayer from "../assets/images/Musicplayer.png";
 import FoodApp from "../assets/images/FoodApp.png";
 import Blog from "../assets/images/Blog.png";
+import Admin from "../assets/images/adminpage.png";
 import MyPortfolio from "../assets/images/MyPortfolio.png";
 import ClientGourvi from "../assets/images/ClientGourvi.png";
 import BlogWeb from "../assets/images/Blogweb.png";
@@ -114,6 +115,15 @@ export default function ProjectSection() {
   const projects = [
     {
       id: 1,
+      title: "E-commerce Admin Page",
+      description:
+        "An e-commerce platform with product listings, shopping cart, and checkout functionality, built with React and integrated with a backend API.",
+      image: Admin,
+      tags: ["React", "API", "TailwindCSS", "MongoDb", "NodeJs", "Express"],
+      link: "https://admin-page-dci2.vercel.app/",
+    },
+    {
+      id: 2,
       title: "Blogging Website(MERN Stack)",
       description:
         "A full-featured blogging platform with user authentication, blog creation, CRUD functionality, JWT, bcyrpt for password security.",
@@ -121,15 +131,7 @@ export default function ProjectSection() {
       tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
       link: "https://blog-frontend-theta-two.vercel.app/",
     },
-    {
-      id: 2,
-      title: "Music Player App(Pure JS)",
-      description:
-        "A sleek music player application with playlist management, audio visualization, and offline support.",
-      image: MusicPlayer,
-      tags: ["HTML5", "CSS", "JavaScript"],
-      link: "https://musicplayer-wbm.vercel.app/",
-    },
+
     {
       id: 3,
       title: "Food Recipe App(API Integration)",
@@ -139,15 +141,14 @@ export default function ProjectSection() {
       tags: ["React", "API", "CSS", "HTML5"],
       link: "https://food-recipe-app-three-theta.vercel.app/",
     },
-
-
     {
       id: 4,
-      title: "Portfolio website",
-      description: "Welcome to My Portfolio website.",
-      image: MyPortfolio,
-      tags: ["React", "TailwindCSS", "EmailJS", "Googleform"],
-      link: "https://myportfolio-one-peach-98.vercel.app/",
+      title: "Music Player App(Pure JS)",
+      description:
+        "A sleek music player application with playlist management, audio visualization, and offline support.",
+      image: MusicPlayer,
+      tags: ["HTML5", "CSS", "JavaScript"],
+      link: "https://musicplayer-wbm.vercel.app/",
     },
     {
       id: 5,
@@ -158,15 +159,16 @@ export default function ProjectSection() {
       tags: ["React", "TailwindCSS", "EmailJS", "Googleform"],
       link: "https://www.linkedupp.in/",
     },
-    // {
-    //   id: 6,
-    //   title: "Inventory Management System (IMS)",
-    //   description:
-    //     "An app that fetches and displays recipes from a public API, allowing users to search and filter by ingredients and cuisine.",
-    //   image: Blog,
-    //   tags: ["React", "API", "CSS3", "HTML5"],
-    //   link: "https://food-recipe-app-three-theta.vercel.app/",
-    // },
+
+
+    {
+      id: 6,
+      title: "Portfolio website",
+      description: "Welcome to My Portfolio website.",
+      image: MyPortfolio,
+      tags: ["React", "TailwindCSS", "EmailJS", "Googleform"],
+      link: "https://myportfolio-one-peach-98.vercel.app/",
+    },
     // {
     //   id: 7,
     //   title: "Inventory Management System (IMS)",
