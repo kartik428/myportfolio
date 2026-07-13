@@ -24,14 +24,23 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`navbar w-full flex justify-between md:justify-around items-center p-4 bg-black/30 backdrop-blur-md  text-white border border-white/20 shadow-lg fixed top-0 z-50`}
+        className={`navbar w-full flex justify-between md:justify-around items-center p-4 backdrop-blur-md  text-white border border-white/20 shadow-lg fixed top-0 z-50`}
       >
         <h1 className="text-3xl text-cyan-400 font-bold ">
           {" "}
-          <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-           KARTIK // DEV
+          <span className="flex items-center gap-3 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-xl bg-cyan-400 blur-md opacity-10 animate-pulse"></div>
+              <img
+                src="/pflogo.png"
+                alt="logo"
+                className="relative h-10 w-10 rounded-xl border border-cyan-400/50 bg-[#0a0a0a] p-1 shadow-[0_0_20px_rgba(34,211,238,0.8)]"
+              />
+            </div>
+            <span className="text-xl font-bold">Kartik.dev</span>
           </span>
         </h1>
+        
         <ul className="  hidden nav-elem text-lg gap-8  sm:flex text-white cursor-pointer">
           <li
             className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"

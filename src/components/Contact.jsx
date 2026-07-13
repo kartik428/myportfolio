@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 overflow-x-hidden bg-black text-white">
+    <section id="contact" className="py-20 overflow-x-hidden text-white">
       <div className="max-w-4xl mx-auto px-6">
 
         {/* Heading */}
@@ -63,7 +63,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-black p-8 rounded-2xl shadow-lg space-y-6"
+          className="p-8 rounded-2xl shadow-lg space-y-6"
         >
           <input type="hidden" name="title" value="Portfolio Contact" required />
 

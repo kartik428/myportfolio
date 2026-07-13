@@ -29,7 +29,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-black overflow-x-hidden text-gray-300 pt-12 pb-6 px-6 md:px-20">
+    <footer className="overflow-x-hidden text-gray-300 pt-12 pb-6 px-6 md:px-20">
       <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
         {/* Brand */}
         <div>
@@ -131,7 +131,7 @@ const Footer = () => {
             </a>
           </div>
           {/* email connect  */}
-          <div className="bg-gradient-to-r from-black  to-black mt-8 rounded-xl w-full max-w-xl">
+          <div className="bg-gradient-to-r mt-8 rounded-xl w-full max-w-xl">
             <h2 className="text-white text-xl font-semibold mb-4">
               Connect us
             </h2>

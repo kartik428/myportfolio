@@ -211,7 +211,7 @@ export default function ProjectSection() {
 
   return (
     <section id="projects">
-      <div className="min-h-screen bg-black  p-8">
+      <div className="min-h-screen p-8">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}

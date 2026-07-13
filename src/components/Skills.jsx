@@ -39,7 +39,7 @@ const item = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 overflow-x-hidden bg-black text-white">
+    <section id="skills" className="py-20 overflow-x-hidden text-white">
       <div className="max-w-6xl mx-auto px-6">
         
         {/* Heading */}

@@ -91,7 +91,7 @@ export default function Timeline() {
   const hireIsLeft = !lastIsLeft;
 
   return (
-    <section id="experience" className="bg-[#000000] py-16 px-4">
+    <section id="experience" className="py-16 px-4">
 
       {/* Heading */}
       <motion.h2
