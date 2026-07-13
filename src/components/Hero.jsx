@@ -106,7 +106,7 @@ const Hero = () => {
         >
           <div className="flex gap-5 justify-center items-center mt-10">
             <a href="#projects">
-              <button className="px-8 py-3 bg-cyan-500 text-black font-bold rounded-full hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.5)]">
+              <button className="px-6 py-3 bg-cyan-500 text-black font-bold rounded-full hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.5)]">
                 View Projects <ArrowRightIcon className="inline-block ml-2" />
               </button>
             </a>
